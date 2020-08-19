@@ -27,3 +27,28 @@
 5. VM über VirtualBox-GUI ausschalten
 
 Schlussfolgerung: Eine VM lässt sich mit Vagrant eindeutig schneller und unkomplizierter erstellen!
+
+
+### Apache Webserver automatisiert aufsetzen
+***
+Um den Automatisierungsgrad von Vagrant im Rahmen dieser Dokumentation etwas besser hervorzuheben, richten wir eine VM, dass sie direkt mit einem vorinstallierten Apache-Webserver startet. Dazu können wir im Vagrantfile den Code etwas leicht abändern und direkt auf Bash-Ebene mit einfachen Befehlen arbeiten. 
+
+Nachfolgend wird die VM mit einem bereits abgeänderten File bzw. VM aus dem M300-Repository erstellt:
+
+1. Terminal (*Bash*) öffnen
+2. In das M300-Verzeichnis (/M300/vagrant/web) wechseln:
+    ```Shell
+      $ cd Pfad/zum-M300-Verzeichnis/vagrant/web
+    ``` 
+3. VM erstellen und starten:
+    ```Shell
+      $ vagrant up
+    ``` 
+4. Webbrowser in der VM öffnen und prüfen, ob der Standard-Content des Webservers unter "http://127.0.0.01:8080" (localhost) erreichbar ist
+5. Im Ordner `/web` die Hauptseite `index.html` editieren bzw. durch eine andere ersetzen (z.B. HTML5up-Themplate) und das Resultat überprüfen
+6. Abschliessend kann die VM wieder gelöscht werden:
+    ```Shell
+      $ vagrant destroy -f
+    ```
+7. Vagrant ist nun komplett einsatzfähig!
+
