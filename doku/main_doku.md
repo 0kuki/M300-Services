@@ -27,7 +27,7 @@
 * Gruppe gebildet
   * Daniel und KJ
 * Git Struktur angepasst für zusammenarbeit
-* apache vagrantfile
-* Firewall vagrantfile
-* benutzerauthentifizierung vagrantfile
-* 
+* apache Vagrantfile
+* Firewall Vagrantfile
+* benutzerauthentifizierung Vagrantfile
+* Reverse Proxy Vagrantfile
