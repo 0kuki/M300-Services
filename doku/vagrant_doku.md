@@ -8,9 +8,9 @@ config.vm.box = "ubuntu/xenial64"
 end
 ```
 Nennenswertes
-1: Spezifiziert die version der Vagrant config version 2
-2: Nutzt eine Ubuntu x64 Vagrantbox von Hashicorp's Vagrantcloud
-3: ende
+1. Spezifiziert die version der Vagrant config version 2
+2. Nutzt eine Ubuntu x64 Vagrantbox von Hashicorp's Vagrantcloud
+3. ende
 
 ### 02 vagrantWeb - Vagrantfile für Webserver
 ```
