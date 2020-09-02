@@ -18,7 +18,10 @@ config.vm.provision "shell", inline: <<-SHELL
   #Passwort
   sudo apt update
   sudo apt install apache2-utils
-  sudo htpasswd -cb /etc/apache2/.htpaswd Daniel 123456
-  sudo htpasswd -cb /etc/apache2/.htpaswd Kejenmo 123456
+  vi /etc/apache2/sites-enabled/000-default.conf
+  sudo nano /etc/apache2/sites-enabled/000-default.conf
+  sudo nano .htaccess
+  cat .htaccess
+  sudo service apache2 restart
 SHELL
 end
