@@ -1,6 +1,6 @@
 # Doku Vagrantfiles
 Speziellere Aktionen in den Vagrantfiles sind hier beschrieben. Dinge die in mehreren files vorkommen werden nur einmal beschrieben.
-### Erstes Vagrantfile - 01 MeineVagrantVM
+### 01 MeineVagrantVM - Erstes Vagrantfile
 
 ```
 Vagrant.configure("2") do |config|
@@ -12,7 +12,7 @@ Nennenswertes
 2: Nutzt eine Ubuntu x64 Vagrantbox von Hashicorp's Vagrantcloud
 3: ende
 
-### Vagrantfile für Webserver - 02 vagrantWeb
+### 02 vagrantWeb - Vagrantfile für Webserver
 ```
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/xenial64"
@@ -35,7 +35,7 @@ Nennenswertes:
 * Shellkommandos:
     * Update der paketlisten
     * Installation Apache webserver
-### Vagrantfile für Webserver mit Firewall - 03 Firewall
+### 03 Firewall - Vagrantfile für Webserver mit Firewall
 ```
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/xenial64"
@@ -62,10 +62,10 @@ Nennenswertes:
 * ufw aktiviert
 * ufw status abgerufen (ausgabe in konsole)
 
-### Vagrantfile für Proxy Server - 04 FWRP
+### 04 FWRP - Vagrantfile für Proxy Server
 ToDo
 
-### Vagrantfile für Apache mit Benutzerauthentifizierung - 05 Auth
+### 05 Auth - Vagrantfile für Apache mit Benutzerauthentifizierung
 ```
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/xenial64"
