@@ -17,19 +17,23 @@ Mit SSH ist es möglich, eine sichere Verbindung zu einem Netzwerkgerät herzust
 Ein SSH-Agent hält alle privaten Schlüssel dekodiert im Speicher, sobald man einmal die entsprechende Passphrase eingegeben hat. Ein ständiges Eintippen der Passphrase für jede neue SSH-Verbindung einfällt somit.
 
 ### SSH-Key erstellen
-```ssh-keygen -t rsa -b 4096 -C "user.name@domain.tld"```
+```shell
+ssh-keygen -t rsa -b 4096 -C "user.name@domain.tld"
+```
+
 ![SSH key Creation Screenshot](/doku/img/create_ssh_key.png "SSH key Creation Screenshot")
-### Client konfigurieren
+## Client konfigurieren
 Im git client den nutzernamen und die github account email eintragen
 
-```git config --global user.name Kejenmo```
+```shell
+git config --global user.name Kejenmo
+git config --global user.email kejenmo.mohan@gmail.com
+```
 
-```git config --global user.email kejenmo.mohan@gmail.com```
-
-### Repository klonen
+## Repository klonen
 
 ![repo clone Screenshot](/doku/img/clone_repo.png "repo clone Screenshot")
-### Übersicht "How to Push"
+## Übersicht "How to Push"
 (übernommen aus  [mc-b/M300](https://github.com/mc-b/M300/tree/master/10-Toolumgebung))
 
 Dieser Abschnitt zeigt die Handhabung von Git-Befehlen auf. Mit den nachfolgenden Kommandos pusht man das (geänderte) Repository zu seinem GitHub-Repository.
@@ -47,4 +51,29 @@ $  git status                      # Dateien werden nun als "zum Pushen bereit" 
 $  git push                        #Upload bzw. Push wird durchgeführt
 ```
 
+## Vagrant
+
+### Download
+
+https://www.vagrantup.com/downloads
+
+### Ordner Erstellen
+
+```shell
+cd vagrant
+mkdir MeineVagrantVM
+cd MeineVagrantVM
+```
+
+### Vagrantfile erstellen, VM erstellen und starten
+```shell
+vagrant init ubuntu/xenial64
+
+vagrant up -provider virtualbox
+```
+
+### SSH zugriff
+```shell
+vagrant ssh
+```
 
