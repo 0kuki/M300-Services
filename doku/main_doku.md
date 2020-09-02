@@ -11,4 +11,20 @@
     end
     ```
   * danach command ```vagrant up``` 
-* VScode A
+
+
+* VScode - Flexibler editor von microsoft
+  * viele nützliche extensions
+
+
+* Dokumentation
+  * Markup editor 
+    * dillinger.io
+
+### 02.09.2020
+***
+* Gruppe gebildet
+  * Daniel und KJ
+* Git Struktur angepasst für zusammenarbeit
+* apache vagrantfile
+* Firewall vagrantfile
