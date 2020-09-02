@@ -21,13 +21,15 @@ Ein SSH-Agent hält alle privaten Schlüssel dekodiert im Speicher, sobald man e
 ![SSH key Creation Screenshot](/doku/img/create_ssh_key.png "SSH key Creation Screenshot")
 ### Client konfigurieren
 Im git client den nutzernamen und die github account email eintragen
+
 ```git config --global user.name Kejenmo```
+
 ```git config --global user.email kejenmo.mohan@gmail.com```
+
 ### Repository klonen
 
 ![repo clone Screenshot](/doku/img/clone_repo.png "repo clone Screenshot")
 ### Übersicht "How to Push"
-***
 (übernommen aus  [mc-b/M300](https://github.com/mc-b/M300/tree/master/10-Toolumgebung))
 
 Dieser Abschnitt zeigt die Handhabung von Git-Befehlen auf. Mit den nachfolgenden Kommandos pusht man das (geänderte) Repository zu seinem GitHub-Repository.
