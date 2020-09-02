@@ -14,6 +14,7 @@
 
 
 * VScode - Flexibler editor von microsoft
+  * modern
   * viele nützliche extensions
 
 
@@ -28,4 +29,5 @@
 * Git Struktur angepasst für zusammenarbeit
 * apache vagrantfile
 * Firewall vagrantfile
-* helloworld
+* benutzerauthentifizierung vagrantfile
+* 
