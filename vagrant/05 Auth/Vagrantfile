@@ -17,8 +17,11 @@ config.vm.provision "shell", inline: <<-SHELL
   sudo apt update
   sudo apt install apache2-utils
   vi /etc/apache2/sites-enabled/000-default.conf
+  echo "AuthType Basic" /etc/apache2./.htpasswd
   sudo nano /etc/apache2/sites-enabled/000-default.conf
+  echo "AuthName Basic" /etc/apache2./.htpasswd
   sudo nano .htaccess
+  echo "AuthUser Basic" /etc/apache2./htaccess
   cat .htaccess
   sudo service apache2 restart
 SHELL
