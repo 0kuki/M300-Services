@@ -16,13 +16,30 @@ config.vm.provision "shell", inline: <<-SHELL
   #Passwort
   sudo apt update
   sudo apt install apache2-utils
-  vi /etc/apache2/sites-enabled/000-default.conf
-  echo "AuthType Basic" /etc/apache2./.htpasswd
-  sudo nano /etc/apache2/sites-enabled/000-default.conf
-  echo "AuthName Basic" /etc/apache2./.htpasswd
-  sudo nano .htaccess
-  echo "AuthUser Basic" /etc/apache2./htaccess
-  cat .htaccess
+
+  rm -rf /etc/apache2/sites-enabled/000-default.conf 
+  echo '<VirtualHost *:80>' >> /etc/apache2/sites-enabled/000-default.conf 
+  echo 'ServerAdmin webmaster@localhost' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'DocumentRoot /var/www/html' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'ErrorLog ${APACHE_LOG_DIR}/error.log' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'CustomLog ${APACHE_LOG_DIR}/access.log combined' >> /etc/apache2/sites-enabled/000-default.conf
+  echo '<Directory "/var/www/html"' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'AuthType Basic' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'AuthName "Restricted Content"' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'AuthUserFile /etc/apache2/.htpasswd' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'Require valid-user' >> /etc/apache2/sites-enabled/000-default.conf
+  echo '</Directory>'  >> /etc/apache2/sites-enabled/000-default.conf
+  echo '</VirtualHost>' >> /etc/apache2/sites-enabled/000-default.conf
+
+  rm -rf /etc/apache2/apache2.conf
+  echo '<Directory /var/www/' >> /etc/apache2/apache2.conf
+  echo Options Indexes FollowSymLinks >> /etc/apache2/apache2.conf
+  echo AllowOverride All >> /etc/apache2/apache2.conf
+  echo Require all granted >> /etc/apache2/apache2.conf
+</Directory>
+
+
+  
   sudo service apache2 restart
 SHELL
 end
