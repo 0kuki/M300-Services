@@ -16,10 +16,15 @@ config.vm.provision "shell", inline: <<-SHELL
   #Passwort
   sudo apt update
   sudo apt install apache2-utils
-  vi /etc/apache2/sites-enabled/000-default.conf
-  sudo nano /etc/apache2/sites-enabled/000-default.conf
-  sudo nano .htaccess
-  cat .htaccess
+
+  echo ''
+
+  echo 'AuthType Basic' >> heir/pfad/.htaccess
+  echo 'AuthName "Restricted Content"' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'AuthUserFile /etc/apache2/.htpasswd' >> /etc/apache2/sites-enabled/000-default.conf
+  echo 'Require valid-user' >> /etc/apache2/sites-enabled/000-default.conf
+  cat /etc/apache2/sites-enabled/000-default.conf
+
   sudo service apache2 restart
 SHELL
 end
