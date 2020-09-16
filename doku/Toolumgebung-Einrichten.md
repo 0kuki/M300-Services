@@ -76,6 +76,7 @@ vagrant up -provider virtualbox
 ```shell
 vagrant ssh
 
-![SSH Tunnel](/doku/img/SSH-Tunnel.jpg "SSH Tunnel")
+
 ```
+![SSH Tunnel](/doku/img/SSH-Tunnel.jpg "SSH Tunnel")
 
