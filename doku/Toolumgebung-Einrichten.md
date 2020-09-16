@@ -78,5 +78,5 @@ vagrant ssh
 
 
 ```
-![SSH Tunnel](/doku/img/SSH-Tunnel.jpg "SSH Tunnel")
+![SSH Tunnel](/doku/img/SSH-Tunnel.JPG "SSH Tunnel")
 
