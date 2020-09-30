@@ -15,3 +15,8 @@
 5. ```ps -ef```
 6. ```netstat -tulpen```
 7. ```exit```
+
+
+## Diagramm
+
+![image](/doku/svg/netzplan-wordpress.svg "image")
