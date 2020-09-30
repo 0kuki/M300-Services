@@ -16,7 +16,7 @@
 
  Erwartet| Ergebnis|
 |--|--|
-| Wordpress setup wird angezeigt | es isch kabutt |
+| Wordpress setup wird angezeigt | Hat nicht funktioniert |
 
 ## 03-MySQL funktionalität
 #### Testbeschreibung:
@@ -26,7 +26,7 @@
 
  Erwartet| Ergebnis|
 |--|--|
-| Wordpress Akzeptiert DB credentials | es isch kabutt |
+| Wordpress Akzeptiert DB credentials | MySQL konnte installiert werden wordpress aber nicht |
 
 ## 03-Volle funktionalität
 #### Testbeschreibung:
@@ -37,5 +37,5 @@
 
  Erwartet| Ergebnis|
 |--|--|
-| Blogpost wird erstellt und kann angezeigt werden | es isch kabutt |
+| Blogpost wird erstellt und kann angezeigt werden | Hat nicht Funktioniert |
 
