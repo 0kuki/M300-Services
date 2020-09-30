@@ -4,30 +4,29 @@
 #### Testbeschreibung:
 1. Browser öffnen
 2. localhost:8080
-3. Apache antwortet mit webseite
 
  Erwartet| Ergebnis|
 |--|--|
-| Es funktiniert | es isch kabutt |
+| Apache antwortet mit webseite | Apache antwortet mit webseite |
 
 ## 01-Wordpress funktionalität
 #### Testbeschreibung:
 1. Apache antwortet mit webseite
-2. Wordpress setup wird angezeigt
+2. wordpress url aufrufen
 
  Erwartet| Ergebnis|
 |--|--|
-| Es funktiniert | es isch kabutt |
+| Wordpress setup wird angezeigt | es isch kabutt |
 
 ## 03-MySQL funktionalität
 #### Testbeschreibung:
 1. Wordpress setup
 2. Datenbank konfigurieren
-3. Wordpress Akzeptiert DB credentials
+
 
  Erwartet| Ergebnis|
 |--|--|
-| Es funktiniert | es isch kabutt |
+| Wordpress Akzeptiert DB credentials | es isch kabutt |
 
 ## 03-Volle funktionalität
 #### Testbeschreibung:
@@ -38,5 +37,5 @@
 
  Erwartet| Ergebnis|
 |--|--|
-| Es funktiniert | es isch kabutt |
+| Blogpost wird erstellt und kann angezeigt werden | es isch kabutt |
 
