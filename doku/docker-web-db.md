@@ -19,4 +19,4 @@
 
 ## Diagramm
 
-![image](/doku/svg/netzplan-wordpress.svg "image")
+![diagram](/doku/svg/netzplan-wordpress.svg "diagram")
